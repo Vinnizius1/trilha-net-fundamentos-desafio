@@ -6,23 +6,12 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
 
-Console.WriteLine("Seja bem-vindo ao sistema de estacionamento!\n" +
-                  "Digite o preço inicial:");
-// precoInicial = Convert.ToDecimal(Console.ReadLine());
 try
 {
+    Console.WriteLine("Seja bem-vindo ao sistema de estacionamento!\n" + "Digite o preço inicial:");
     precoInicial = Convert.ToDecimal(Console.ReadLine());
-}
-catch
-{
-    Console.WriteLine("Opção inválida :(\nEncerraremos o programa.");
-    Environment.Exit(0);
-}
 
-Console.WriteLine("Agora digite o preço por hora:");
-// precoPorHora = Convert.ToDecimal(Console.ReadLine());
-try
-{
+    Console.WriteLine("Agora digite o preço por hora:");
     precoPorHora = Convert.ToDecimal(Console.ReadLine());
 }
 catch
